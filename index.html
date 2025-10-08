@@ -12,8 +12,7 @@
     <section>
       <form action="" method="get">
         <fieldset>
-          <!-- Dados Pessoais -->
-
+          Dados Pessoais
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome:</label>
           <input type="text" id="userName" name="userName" required />
@@ -46,6 +45,46 @@
           <br />
           <label for="userImage">Upload de foto:</label>
           <input type="file" name="userImage" id="userImage" accept="image/*" />
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Perfil</legend>
+          <p>Gênero:</p>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="Feminino"
+            required
+          />
+          <label for="culturalGender">Feminino</label>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="Masculino"
+            required
+          />
+          <label for="culturalGender">Masculino</label>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="notInformed"
+            required
+          />
+          <label for="culturalGender">Prefiro não informar</label>
+          <br />
+          <label for="maritalStatus">Estado Civil:</label>
+          <select name="maritalStatus" id="maritalStatus">
+            <option value="notInformed">Selecione</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="uniaoEstavel">União estável</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+          </select>
         </fieldset>
         <br />
         <button type="submit">Enviar</button>
