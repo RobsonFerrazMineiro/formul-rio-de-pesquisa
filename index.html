@@ -11,9 +11,8 @@
     </header>
     <section>
       <form action="" method="get">
-        <fieldset>
-          <!-- Dados Pessoais -->
-
+        <!-- <fieldset>
+          Dados Pessoais
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome:</label>
           <input type="text" id="userName" name="userName" required />
@@ -46,8 +45,87 @@
           <br />
           <label for="userImage">Upload de foto:</label>
           <input type="file" name="userImage" id="userImage" accept="image/*" />
+                  <br />
+        </fieldset> -->
+
+        <fieldset>
+          <legend>Perfil</legend>
+          <p>Gênero:</p>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="Feminino"
+            required
+          />
+          <label for="culturalGender">Feminino</label>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="Masculino"
+            required
+          />
+          <label for="culturalGender">Masculino</label>
+          <input
+            type="radio"
+            id="culturalGender"
+            name="culturalGender"
+            value="notInformed"
+            required
+          />
+          <label for="culturalGender">Prefiro não informar</label>
+          <br />
+          <!-- <label for="culturalState">Estado:</label>
+          <input type="text" id="culturalState" name="culturalState" required />
+          <br />
+          <label for="culturalCountry">País:</label>
+          <input
+            type="text"
+            id="culturalCountry"
+            name="culturalCountry"
+            required
+          />
+          <br />
+          <label for="culturalEvent">Evento Cultural Favorito:</label>
+          <input type="text" id="culturalEvent" name="culturalEvent" required />
+          <br />
+          <label for="eventFrequency"
+            >Frequência de Participação em Eventos Culturais:</label
+          >
+          <select id="eventFrequency" name="eventFrequency" required>
+            <option value="">Selecione</option>
+            <option value="weekly">Semanalmente</option>
+            <option value="monthly">Mensalmente</option>
+            <option value="yearly">Anualmente</option>
+            <option value="rarely">Raramente</option>
+          </select>
+          <br />
+          <label for="favoriteArtForm">Forma de Arte Favorita:</label>
+          <select id="favoriteArtForm" name="favoriteArtForm" required>
+            <option value="">Selecione</option>
+            <option value="music">Música</option>
+            <option value="theater">Teatro</option>
+            <option value="dance">Dança</option>
+            <option value="visualArts">Artes Visuais</option>
+            <option value="literature">Literatura</option>
+            <option value="cinema">Cinema</option>
+          </select>
+          <br />
+          <label for="culturalSpending"
+            >Gastos Mensais com Atividades Culturais (em R$):</label
+          >
+          <input
+            type="number"
+            id="culturalSpending"
+            name="culturalSpending"
+            required
+            min="0"
+            step="0.01"
+            placeholder="0.00"
+          />
+          <br /> -->
         </fieldset>
-        <br />
         <button type="submit">Enviar</button>
       </form>
     </section>
