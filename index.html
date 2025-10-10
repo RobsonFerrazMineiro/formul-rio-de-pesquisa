@@ -141,24 +141,40 @@
           />
           <label for="instagram">Instagram</label>
           <br />
-          <input
-            type="checkbox"
-            id="facebook"
-            name="social"
-            value="facebook"
-          />
+          <input type="checkbox" id="facebook" name="social" value="facebook" />
           <label for="facebook">Facebook</label>
           <br />
-          <input
-            type="checkbox"
-            id="linkedin"
-            name="social"
-            value="linkedin"
-          />
+          <input type="checkbox" id="linkedin" name="social" value="linkedin" />
           <label for="linkedin">Linkedin</label>
           <br />
           <input type="checkbox" id="X" name="social" value="x" />
           <label for="X">X</label>
+          <br />
+          <label for="musicStyle">Estilo Musical:</label>
+          <input
+            type="text"
+            id="musicStyle"
+            name="musicStyle"
+            placeholder="Ex.: Rock"
+            list="stylesTypes"
+          />
+          <datalist id="stylesTypes">
+            <option value="Rock" />
+            <option value="Pop" />
+            <option value="Funk" />
+            <option value="Sertanejo" />
+            <option value="Eletrônica" />
+            <option value="Clássica" />
+            <option value="Jazz" />
+            <option value="Blues" />
+            <option value="Gospel" />
+            <option value="Rap" />
+            <option value="Reggae" />
+            <option value="Axé" />
+            <option value="Forró" />
+            <option value="Pagode" />
+            <option value="MPB" />
+          </datalist>
         </fieldset>
         <button type="submit">Enviar</button>
       </form>
